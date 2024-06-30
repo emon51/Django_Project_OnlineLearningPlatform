@@ -1,4 +1,4 @@
-# OnlineLearningPlatform 
+# Online Learning Platform 
 
 ### Motivation
 Build a user-friendly platform that enables instructors to create and manage courses, and students to enroll, access content efficiently.

@@ -1,0 +1,17 @@
+
+
+{% extends 'html/base.html' %}
+
+{% block title %} Enroll {% endblock %}
+
+{% block content %}
+  <h3>Enrolled Courses</h3>
+  <ul>
+    {% for course in courses %}
+      <li>
+        {{ course.title }} by {{ course.instructor.username }} <a href="{% url 'show_course' id=course.id %}"> Enter </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <button type="submit"> <a href="/student_actions"> Back </a> </button>
+{% endblock %}

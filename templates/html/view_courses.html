@@ -1,0 +1,17 @@
+
+
+{% extends 'html/base.html' %}
+
+{% block title %} All Courses {% endblock %}
+
+{% block content %}
+  <h3>All Courses</h3>
+  <ul>
+    {% for course in courses %}
+      <li>
+        {{ course.title }} by instructor {{ course.instructor.username }} <a href="{% url 'course_enrollment' course.pk %}"> Enroll </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <button type="submit"> <a href="/student_actions"> Back </a> </button>
+{% endblock %}

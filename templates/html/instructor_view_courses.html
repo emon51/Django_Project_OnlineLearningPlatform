@@ -1,0 +1,21 @@
+
+
+
+{% extends 'html/base.html' %}
+
+{% block title %} course details {% endblock %}
+
+{% block content %}
+  <h3>All Courses</h3>
+  <ul>
+    {% for course in courses %}
+      <li>
+        {{ course.title }} by instructor {{ course.instructor.username }} 
+        <button type="submit"> <a href="{% url 'update_course' id=course.id %}"> Update </a> </button> 
+        <button type="submit"> <a href="{% url 'delete_course' id=course.id %}"> Delete </a> </button>
+        <button type="submit"> <a href="{% url 'show_course' id=course.id %}"> Show Course </a> </button>
+      </li>
+    {% endfor %}
+  </ul>
+  <button type="submit"> <a href="/instructor_actions"> Back </a> </button>
+{% endblock %}

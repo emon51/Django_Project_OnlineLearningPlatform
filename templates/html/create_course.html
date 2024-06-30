@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> New Course </title>
+</head>
+<body>
+    <form method="POST"> {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit">
+    </form>
+    <button type="submit"> <a href="/instructor_actions"> Back </a> </button>
+</body>
+</html>

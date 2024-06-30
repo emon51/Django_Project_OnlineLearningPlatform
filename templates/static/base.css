@@ -1,0 +1,56 @@
+
+
+
+body {
+    background: black;
+}
+
+/* We have a main-div having two div left-div and right-div horizontaly(flex) */
+.main-div{
+    display: flex;
+    height: 100vh;
+
+}
+
+.left-div {
+  width: 350px;
+  background-color: chocolate;
+  padding-top: 50px;
+}
+
+.right-div {
+  flex: 1; /* takes remaining space */
+  padding-left: 50px;
+  background-color: whitesmoke;
+}
+
+.greeting {
+  color: blue;
+}
+
+.button {
+  display: flexbox;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 8px 16px; 
+  background-color: cornflowerblue;
+  color: black;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.button:hover {
+  background-color:aqua;
+}
+
+button:hover {
+  background-color: aquamarine;
+
+}

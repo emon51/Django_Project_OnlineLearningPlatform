@@ -1,0 +1,16 @@
+
+
+
+{% extends 'html/base.html' %}
+
+{% block title %} course details {% endblock %}
+
+{% block content %}
+  <h3> {{ course.title }} </h3>
+  <div class="display_course">
+    <p> 
+        {{ course.description }}
+    </p>
+  </div>
+  <button type="submit"> <a href="/home"> Home </a> </button>
+{% endblock %}

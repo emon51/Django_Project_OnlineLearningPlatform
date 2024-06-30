@@ -1,0 +1,15 @@
+
+{% extends 'html/base.html' %}
+
+{% block title %} instructor_activities {% endblock %}
+
+{% block content %}
+    <div class="actions">
+        <button type="submit"> <a href="/instructor_view_courses" > Your Created Courses  </a> </button>
+        <button type="submit"> <a href="/create_course" > Create New Course  </a> </button>
+        <button type="submit">  <a href="/home"> Back </a> </button>
+    </div>
+{% endblock %}
+
+
+<!-- user.groups.filter(name='Member').exists() -->
